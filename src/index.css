@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family: 'Raleway', sans-serif;
+  margin:0px;
+  padding:0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+}
+
+.showcase{
+  height:80vh;
+  width:30vw;
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px -5px rgb(38,57,77);
+}
+
+.showcase h1{
+  font-size: 2rem;
+  background-color: darkred;
+  color:#fff;
+  text-align: center;
+  border-radius: 3px;
+  width:100%;
+}
+
+.introduction{
+  margin:0.8rem;
+}
+.introduction input{
+  margin:1rem;
+  width:60%;
+  padding:0.7rem 0.8rem;
+  border-radius: 3px;
+  border:none;
+  outline: none;
+  font-size: 1rem;
+}
+::placeholder{
+  text-align: center;
+}
+.introduction button{
+  padding:0.3rem 0.4rem;
+  font-size:1rem;
+  border-radius: 40%;
+  border:1px solid crimson;
+  outline: none;
+  cursor: pointer;
+  color:#fff;
+  background-color: crimson;
+}
+.introduction button:hover{
+  background-color: green;
+  border: 1px solid green;
+}
+
+.todo_style{
+  display: flex;
+  margin:0.6rem 0.3rem;
+}
+li{
+  color:#fff;
+  margin:3px 6px;
+  
+  list-style: none;
+}
+.todo_style button{
+  padding:0.1rem 0.3rem;
+  border-radius: 40%;
+  outline: none;
+  border:1px solid blue;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+.todo_style button:hover{
+  background-color: red;
+  border:1px solid red;
+}
+
+
+
+/* Responsive Media Query */
+
+
+ @media screen and (max-width:810px){
+    .showcase{
+      width:70vw;
+    }
+} 
+
+
+@media screen and (max-width:350px) {
+     .introduction button{
+       padding:8px;
+       font-size:9px;
+     }
+}
+@media screen and (max-width:332px) {
+     .introduction button{
+       padding:5px;
+       font-size:5px;
+     }
+}
+@media screen and (max-width:296px) {
+     .introduction button{
+       padding:2px;
+       font-size:2px;
+     }
 }
